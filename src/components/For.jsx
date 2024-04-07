@@ -11,7 +11,7 @@ import withRenderCount from './HOCs/withRenderCount'
  * @param {ReactNode} [props.fallback=null] - The component to render if the list of items is empty or null.
  * @returns {ReactNode} A fragment containing the results of applying the child function to each item in the list, or the fallback component if the list is empty or null.
  */
-export const For = ({ in: items, children, fallback = null }) =>
+const For = ({ in: items, children, fallback = null }) =>
   items && items.length
     ? <>{items.map(children)}</>
     : fallback;

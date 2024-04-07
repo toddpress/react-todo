@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { For } from '../For'
+import For from '../For'
 import withRenderCount from '../HOCs/withRenderCount'
 
 import { useTodosStore } from '../../store/todos/todosStore'

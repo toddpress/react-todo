@@ -2,7 +2,7 @@
 import { useTodosStore } from '../../store/todos/todosStore'
 import withRenderCount from '../HOCs/withRenderCount'
 
-export function TodoListTitle() {
+function TodoListTitle() {
   const { state: listTitle, actions } = useTodosStore(state => state.listTitle)
 
   return (
